@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { initializeSpeedInsights } from './lib/speedInsights';
+
+// Initialize Vercel Speed Insights for performance monitoring
+initializeSpeedInsights();
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
